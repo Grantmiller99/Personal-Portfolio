@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Grant Miller</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/54fc9bc453.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="closemenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CS/DS Major</p>
+                <h1>Hi, I'm Grant Miller</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/backgound.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm Grant Miller, a freshman dual majoring in Computer Science and Data Science at the
+                        University of Michigan-Dearborn.
+                        I'm passionate to apply my programming skills to real world applications.
+                        I'm also particularly interested in learning more about software development, game design, and
+                        artificial intelligence.
+                        While I'm a freshman in college with much to learn, I'm quick to adapt to new technologies and
+                        programming languages.
+                        I've taught myself through youtube and self driven projects in C#, HTML, CSS, and Python.
+                        I'm naturally curious, and not afraid to ask questions in order to grow to become a better
+                        developer.
+                        My goal is to continuously learn and contribute to projects.
+                        Outside of School and Computer Science, I love playing video games and tinkering with my PC.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programing</span><br>Skilled in Muliples Languages</li>
+                            <li><span>UI/UX</span><br>Desigining Web/App interfaces</li>
+                            <li><span>Web/App Development</span><br>Building Websies/Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>TBD</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>CS/DS major at the University of Michigan-Dearborn</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>Description for above</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Description for above</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Creation</h2>
+                    <p>Description for above</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot 2024-10-07 201949.png" alt="">
+                    <div class="layer">
+                        <h3>Web Creation</h3>
+                        <p>Description
+                            .
+                            .
+                            .
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot 2024-10-07 222712.png" alt="">
+                    <div class="layer">
+                        <h3>Web Design</h3>
+                        <p>Description
+                            .
+                            .
+                            .
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>"add something"</h3>
+                        <p>Description
+                            .
+                            .
+                            .
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!---------------contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>grantmiller2006@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>734-674-3846</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/grant-miller-80b623279"><iclass="fa-brands
+                                fa-linkedin"></i></a>
+                        <a href="https://discord/users/568929718397829121"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://x.com/GrantMi01331076"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://github.com/Grantmiller99"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link")
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.stlye.right = "0";
+            }
+            function closemenu() {
+                sidemenu.stlye.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbydYtmjfo_cipX3qgYU0O37Bw0oyi7qLgBkL_7pFiS2M7t9E0zm7BV-KV1sPBU8GwqoBw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})   
+                .then(response => {
+                    msg.innerHTML = "Message Sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+</body>
+
+</html>
